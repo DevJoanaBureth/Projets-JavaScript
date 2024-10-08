@@ -1,5 +1,5 @@
-# Agence-de-communication
+# Generateur-de-bulles
+👩‍💻 Code HTML, CSS et JavaScript qui créait un jeu où l'on doit éclater le plus de bulle.
 
-👩‍💻 Code HTML, CSS et JavaScript qui présente le site d'agence de communication.
+🕰️ Fait en 3 jours.
 
-🕰️ Fait en 3 jours, pour tester la librairie d'animations Gsap de JavaScript.
