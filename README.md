@@ -7,7 +7,7 @@ Chaque projet est accessible via une branche spécifique.
 
 1. **Agence de communication**
    - Branche : `agence-de-communication`
-   ↷ [Accéder au code](https://github.com/DevJoanaBureth/Projets-JavaScript/tree/agence-de-communication)
+   - ↷ [Accéder au code](https://github.com/DevJoanaBureth/Projets-JavaScript/tree/agence-de-communication)
 
 2. **Enveloppe**
    - Branche : `enveloppe`
