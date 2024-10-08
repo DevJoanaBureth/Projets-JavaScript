@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Computer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="computer">
+      <div class="screen" id="screen">
+        <button id="start-button" title="Start up">
+          <i class="fas fa-play"></i>
+        </button>
+
+        <div class="off-screen" id="off-screen"></div>
+
+        <div class="logo-screen hidden" id="logo-screen">
+          <div class="logo-container">
+            <img src="logo.png" alt="Brand logo" id="logo" />
+          </div>
+          <p>Star's Run</p>
+        </div>
+
+        <div class="boot-screen hidden" id="boot-screen">
+          <p class="loading-text">Loading...</p>
+          <div class="loading-bar" id="loading-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="desktop hidden" id="desktop">
+          <div class="desktop-icons">
+            <div class="icon" id="message-file" title="Message.txt">
+              <i class="fas fa-file-alt"></i>
+              <span>Message.txt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="taskbar">
+          <button class="windows-button" title="Menu Windows">
+            <i class="fab fa-windows"></i>
+          </button>
+          <div class="hour-container"></div>
+          <div id="hour">00:00</div>
+        </div>
+
+        <div class="secret-message hidden" id="secret-message">
+          <p>That's a secret ! 😝</p>
+        </div>
+      </div>
+
+      <div class="keyboard">
+        <div class="keycontainer">
+          <div class="keys">
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">0</div>
+            <div class="key">_</div>
+            <div class="key">=</div>
+            <div class="key">|</div>
+          </div>
+          <div class="keys">
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+            <div class="key">{</div>
+            <div class="key">}</div>
+          </div>
+          <div class="keys">
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+            <div class="key">:</div>
+            <div class="key">"</div>
+          </div>
+          <div class="keys">
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key"><</div>
+            <div class="key">></div>
+            <div class="key">?</div>
+          </div>
+          <div class="keys">
+            <div class="key space"></div>
+          </div>
+        </div>
+        <div class="keys">
+          <div class="key pad"></div>
+        </div>
+
+        <div class="sticker-container">
+          <div class="sticker"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
