@@ -1,4 +1,5 @@
-# Enveloppe
-👩‍💻 Code HTML, CSS et JavaScript qui ouvre et ferme une enveloppe pour afficher un message mignon.
+# Agence-de-communication
 
-🕰️ Fait en 2 jours, pour tester et apprendre les transitions en CSS.
+👩‍💻 Code HTML, CSS et JavaScript qui présente le site d'agence de communication.
+
+🕰️ Fait en 3 jours, pour tester la librairie d'animations Gsap de JavaScript.
