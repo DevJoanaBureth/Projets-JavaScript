@@ -1,0 +1,298 @@
+:root {
+  --c1: #eee;
+  --c2: #222;
+  --c3: #333;
+  --c4: #dfd3c3;
+  --c5: #444;
+  --c6: #666;
+  --c7: #f8ede3;
+  --c8: #7c6b67;
+  --c9: #d0b8a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  background-color: var(--c4);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.computer {
+  width: 600px;
+  height: 435px;
+  position: relative;
+
+  filter: drop-shadow(0 20px 15px var(--c8));
+}
+
+.screen {
+  width: 100%;
+  height: 400px;
+  background-color: var(--c2);
+  color: var(--c1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  border: 12px solid var(--c3);
+  border-bottom: 50px solid var(--c3);
+  border-radius: 4px;
+}
+
+#start-button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -55px;
+  right: -5px;
+
+  width: 40px;
+  height: 30px;
+
+  border-radius: 4px;
+  background-color: var(--c5);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--c1);
+
+  filter: drop-shadow(0 2px 2px var(--c2));
+}
+
+#start-button:hover {
+  background-color: var(--c6);
+}
+
+#start-button:disabled {
+  background-color: var(--c6);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.logo-screen {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s;
+  background-color: var(--c7);
+  color: var(--c2);
+}
+
+.logo-screen.visible {
+  opacity: 1;
+}
+
+#logo {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.logo-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-screen p {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.loading-text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.loading-bar {
+  width: 200px;
+  height: 20px;
+  border: 1.5px solid var(--c1);
+  position: relative;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: var(--c7);
+  transition: width 3s;
+}
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  background-color: var(--c8);
+}
+
+.taskbar {
+  width: 100%;
+  height: 40px;
+  background-color: var(--c7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  visibility: hidden;
+}
+
+.windows-button {
+  background: none;
+  border: none;
+  color: var(--c9);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.windows-button:hover {
+  transition: 0.2s;
+  color: var(--c4);
+}
+
+.desktop-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 40px);
+}
+
+.icon {
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon:hover {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #eeeeee20;
+}
+
+.icon i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.icon span {
+  display: block;
+  font-size: 18px;
+}
+
+.hour-container {
+  width: 100%;
+  height: 100%;
+}
+
+#hour {
+  text-align: center;
+  align-items: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--c9);
+}
+
+.secret-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  background-color: var(--c9);
+  color: var(--c5);
+}
+
+.keyboard {
+  width: 100%;
+  background-color: var(--c3);
+  border: 12px solid var(--c3);
+  border-radius: 4px;
+  border-top: 10px solid var(--c2);
+  padding-top: 10px;
+
+  display: grid;
+}
+
+.keys {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+
+  background-color: var(--c5);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--c1);
+
+  filter: drop-shadow(0 1px 5px var(--c2));
+}
+
+.space {
+  width: 240px;
+}
+
+.pad {
+  width: 280px;
+  height: 120px;
+  margin-top: 10px;
+  filter: none;
+}
+
+.sticker-container {
+  filter: drop-shadow(0 5px 5px var(--c2));
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(25deg);
+  bottom: -350px;
+  right: -5px;
+}
+
+.sticker {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: var(--c8);
+
+  height: 50px;
+  width: 50px;
+}
+
+.hidden {
+  display: none;
+}
