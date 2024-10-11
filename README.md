@@ -3,8 +3,6 @@
 Ce repository regroupe plusieurs projets réalisés en JavaScript.
 Chaque projet est accessible via une branche spécifique.
 
-![Une capture d'écran pour pouvoir comprendre où est le bouton pour changer de branche dans le répertoire](screenshot-projets-js.png)
-
 ## 🚀 Projets disponibles
 
 1. **Agence de communication**
