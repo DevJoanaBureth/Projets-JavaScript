@@ -1,7 +1,7 @@
 # 🗃️ Projets JavaScript
 
 Ce repository regroupe plusieurs projets réalisés en JavaScript.
-Chaque projet est accessible via une branche spécifique.
+Chaque projet est accessible via un lien spécifique.
 
 ## 🚀 Projets disponibles
 
